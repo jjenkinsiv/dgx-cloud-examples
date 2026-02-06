@@ -63,4 +63,4 @@ spec:
               memory: 256Mi
           securityContext:
             readOnlyRootFilesystem: false
-            runAsNonRoot: false
+            runAsNonRoot: true

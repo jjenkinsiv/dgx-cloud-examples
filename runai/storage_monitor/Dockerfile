@@ -28,6 +28,10 @@ COPY . .
 # Install the storage monitor package
 RUN pip install --no-cache-dir .
 
+# Run as non-root user
+RUN useradd -r -s /usr/sbin/nologin monitor
+USER monitor
+
 # FastAPI dashboard port
 EXPOSE 8081
 
