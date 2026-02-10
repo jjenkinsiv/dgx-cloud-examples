@@ -37,7 +37,8 @@ spec:
       serviceAccountName: storage-monitor
       containers:
         - name: storage-monitor
-          image: <your-registry>/storage-monitor:1.0.1
+          # Replace with your registry, e.g.: myregistry.io/storage-monitor:1.0.1
+          image: storage-monitor:1.0.1
           ports:
             - containerPort: 8081
               name: http
